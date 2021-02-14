@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
+main
+{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+   background-color: #EBF2F7;
+}
+p,span
+{
+    font-size: 14px;
+}
+span
+{
+    font-weight:400;
+}
+strong
+{
+    font-size: 15px;
+    
+}
+.closebtn:hover
+{
+    transform: scale(1.2);
+}
+.textflow
+{
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+.card-data
+{
+    
+    width: 800px;
+    height: 80px;
+    background: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    border-radius: 16px;
+    display: flex;
+}
+.btnfeed
+{
+    background-color: #A3FFD3;
+}
+.btnfeed2
+{
+    background-color: #FFAFAF;
+}
+.cardrow:hover
+{
+    transform: scale(1.02);
+}
+.card-data2:hover
+{
+    transform: scale(1.02);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.paginate
+{
+    
+    height:auto;
+    display: flex;
+    align-items:flex-start;
+    border:1px solid black;
+
+}
+.closebtn
+{
+   background: url('./components/close.png');
+   background-position: center;
+   background-size: contain;
+   height:20px;
+   width: 20px;
+   object-fit: contain;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   margin-left: auto;
+
+}
+.togglebg
+{
+    background-color:#EBF2F7;
+    color: #9C9C9C;
+}
+.closebtn img
+{
+    width: 40px ;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.link
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-data2
+{
+    width:220px;
+    height: 250px;
+    background: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin:10px 10px!important;
+
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    margin:10px;
+    justify-content: center;
+    align-items:center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.col
+{
+    display: flex;
+    flex-direction:column;
+    margin:10px;
+    justify-content: center;
+    align-items:center;
+}
+aside
+{
+    width: 390px;
+    height: 100vh;
+    background-color: #EBF2F7;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
 }
 
-.App-link {
-  color: #61dafb;
+.active
+{
+    background-color: #A3FFD3;
+    color:#000000;
+
+}
+.content
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #E9F0F5;
+}
+.profile,.toggle,.feedback
+{
+   
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+}
+.toggle
+{
+    width: 248px;
+    height: 151px;
+}
+.tbox
+{
+    width: 170px;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flexb
+{
+    width: 70%;
+    flex-wrap: wrap;
+    
+}
+.tbox i
+{
+    width: 85px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in;
+}
+/* i:hover
+{
+    transform: scale(1.05);
+}   */
+.tc
+{
+    border-radius:40px!important;
+    
+}
+
+.profile
+{
+    width: 248px;
+    height: 67px;
+}
+.feedback
+{
+    width: 248px;
+    height: 140px;
+}
+.form-head
+{
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+.form-sub
+{
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+form label ,input,textarea
+{
+    font-size: 12px!important;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+.btntext
+{
+    font-weight: 600;
+    color: white;
+    background-color: #5CC8A1;
+}
+.no
+{
+    width:'40px'!important;
+    border:0.5px solid #e5e5e5;
+    outline: none;
+    padding: 0px 5px;
 }
